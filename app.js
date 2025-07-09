@@ -30,7 +30,7 @@ function addItemToList (){
 
     //adds checkbox to list item
     const itemContainer = document.querySelectorAll(".task");
-    const lastItemContainer =itemContainer[-1];
+    const lastItemContainer =itemContainer[itemContainer.length-1];
 
     newTask.appendChild(lastItemContainer);
 
