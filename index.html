@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <h1 class = "title">To Do List</h1>
+
+    <div class = "incompleted-task">
+        <h2>Tasks to complete</h2>
+        <ul id = "taskList">
+            <li class = "task"><input type = "checkbox"/>Do your homework</li>
+            <li class = "task"><input type = "checkbox"/>Feed the dog</li>
+            <li class = "task"><input type = "checkbox"/>Water the lawn</li>
+
+        </ul>
+    <div class = "add-task">
+        <button onclick = addItemToList() type = "button" id="addbutton">Add</button>
+        <input type = "text" id = "userInput" value = ""/>
+    </div>
+
+    </div>
+
+    <div class = "completed-task">
+        <h2>Tasks completed</h2>
+        <ul>
+            <li>Do the dishes</li>
+        </ul>
+  </div>
+</body>
+</html>

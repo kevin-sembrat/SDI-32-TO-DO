@@ -1,0 +1,43 @@
+h1 {
+    color: red;
+}
+li {
+    list-style: none;
+}
+body {
+    justify-items: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    "title title"
+    "incompleted-task completed-task";
+    font-size:20 px
+
+}
+
+div {
+    border: 1px solid red;
+}
+
+.title {
+    grid-area: title; /*<--from grid-template-area*/
+
+}
+.completed-task {
+    grid-area: completed-task;
+    min-width: 100%;
+    justify-items: center;
+}
+
+.incompleted-task {
+    grid-area:incompleted-task;
+    min-width: 100%;
+    justify-items: center;
+}
+.add-task {
+border: none;
+}
+
+
